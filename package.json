@@ -1,0 +1,23 @@
+{
+  "name": "redishackathon",
+  "version": "1.0.0",
+  "description": "Podcast recommendation system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parse": "^4.14.1",
+    "express": "^4.18.1",
+    "fetch": "^1.1.0",
+    "multer": "^1.4.5-lts.1",
+    "redis": "^4.2.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "rss-parser": "^3.11.0",
+    "spacy-nlp": "^1.0.11"
+  }
+}
