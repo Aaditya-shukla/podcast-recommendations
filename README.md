@@ -1,4 +1,4 @@
 # podcast-recommendations
 podcast recommendations using Redis stacks
 
-![Screenshot](Screenshot_1.png)
+![Screenshot](https://i.postimg.cc/nrWkyCHS/Screenshot-1.png)
