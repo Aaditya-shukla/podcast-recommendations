@@ -19,16 +19,24 @@ npm install
 
 node server.js 
 
+Please wait for 1 minutes after starting the node server since nlp server takes time to come up
+
+
 # Terminal 2$
 
 npm install --prefix my-app/
 
 npm start --prefix my-app/
 
-Please wait for 1 minutes after starting the node server since nlp server takes time to come up
 
-Creating Data in all redis modules.
+Creating Data in all redis modules (RedisJSON, RedisGraph).
+
 Create Podcasts data in RedisJSON
+
+Create index on redis json
+
+FT.CREATE myIdx ON JSON SCHEMA $.title AS title TEXT 
+
 
 async function addPodcast(data) {
 
