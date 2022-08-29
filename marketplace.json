@@ -1,0 +1,22 @@
+
+{
+    "app_name": "Podcasts Recommendation System",  //Name of the app
+    "description": "Recommendation of podcasts as the user searches for podcasts", 
+    "hidden": false, 
+    "rank": 30, 
+    "type": "Full App", 
+    "contributed_by": "Redis Labs", 
+    "repo_url": "https://github.com/Aaditya-shukla/podcast-recommendations/tree/master", 
+    "download_url": "https://github.com/Aaditya-shukla/podcast-recommendations/tree/master",
+
+    "language": ["JavaScript"], 
+    "redis_commands": [""], 
+    "redis_features": [""],
+    "redis_modules": ["RediJSON", "RediSearch", "RedisGraph"], //Value can be one or more of "RediJSON", "RediSearch", "RedisTimeseries", "RedisAI"  "RedisGears" or "RedisGraph" listed in an array. 
+
+    "youtube_url": "", //Provide a Youtube link to your app's video
+    "special_tags": ["Hackathon"], 
+    "verticals": ["Technology"], 
+    "markdown": "https://raw.githubusercontent.com/redislabs-training/redis-sitesearch/master/README.md" // Link to the RAW Markdown.
+}
+
