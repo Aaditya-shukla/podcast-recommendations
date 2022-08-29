@@ -3,13 +3,45 @@ podcast recommendations using Redis stacks
 
 ![Screenshot](https://i.postimg.cc/nrWkyCHS/Screenshot-1.png)
 
+How to run the app
 
-Creating Data in all redis modules.
+# Terminal 1$
+
+install spacy in python3 
+
+python3 -m pip install -U socketIO-client 
+
+python3 -m pip install -U spacy==2.1.3 
+
+python3 -m spacy download en_core_web_md 
+
+npm install 
+
+node server.js 
+
+Please wait for 1 minutes after starting the node server since nlp server takes time to come up
+
+
+# Terminal 2$
+
+npm install --prefix my-app/
+
+npm start --prefix my-app/
+
+
+Creating Data in all redis modules (RedisJSON, RedisGraph).
+
 Create Podcasts data in RedisJSON
 
+Create index on redis json
+
+FT.CREATE myIdx ON JSON SCHEMA $.title AS title TEXT 
+
+
 async function addPodcast(data) {
-        const KEY = data.title.split(" ").join("-") + "-" + data.artistName.split(" ").join("-");
-        client.json.set(KEY, '.', data);
+
+  const KEY = data.title.split(" ").join("-") + "-" + data.artistName.split(" ").join("-");
+  client.json.set(KEY, '.', data);
 }
 
 
